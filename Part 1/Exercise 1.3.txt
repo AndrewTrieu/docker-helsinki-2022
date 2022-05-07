@@ -1,0 +1,17 @@
+andrew_trieu@DESKTOP-RL9EAJM:~$ docker run -it --name looper devopsdockeruh/simple-web-service
+andrew_trieu@DESKTOP-RL9EAJM:~$ docker exec -it looper bash
+root@2072d0bfcabc:/usr/src/app# tail -f ./text.log
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-06 15:49:49 +0000 UTC
+2022-05-06 15:49:51 +0000 UTC
+2022-05-06 15:49:53 +0000 UTC
+2022-05-06 15:49:55 +0000 UTC
+2022-05-06 15:49:57 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-06 15:49:59 +0000 UTC
+2022-05-06 15:50:01 +0000 UTC
+2022-05-06 15:50:03 +0000 UTC
+2022-05-06 15:50:05 +0000 UTC
+2022-05-06 15:50:07 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+...

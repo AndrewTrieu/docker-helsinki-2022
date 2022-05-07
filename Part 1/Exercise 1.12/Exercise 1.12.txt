@@ -1,0 +1,4 @@
+git clone https://github.com/docker-hy/material-applications.git
+cd  material-applications/example-frontend/
+docker build . -t example-frontend
+docker run -p 5000:5000 example-frontend

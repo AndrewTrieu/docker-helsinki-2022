@@ -1,0 +1,4 @@
+ndrew_trieu@DESKTOP-RL9EAJM:~/docker_helsinki_2022$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+andrew_trieu@DESKTOP-RL9EAJM:~/docker_helsinki_2022$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE

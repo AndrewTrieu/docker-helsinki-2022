@@ -1,0 +1,5 @@
+andrew_trieu@DESKTOP-RL9EAJM:~/docker_helsinki_2022$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+d99956b77da9   nginx     "/docker-entrypoint.…"   26 seconds ago   Up 25 seconds               80/tcp    determined_liskov
+e75f37ab9e1e   nginx     "/docker-entrypoint.…"   27 seconds ago   Exited (0) 5 seconds ago              relaxed_jones
+3002b27ab38b   nginx     "/docker-entrypoint.…"   28 seconds ago   Exited (0) 14 seconds ago             magical_bell
