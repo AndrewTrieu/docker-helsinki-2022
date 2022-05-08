@@ -1,0 +1,3 @@
+https://hub.docker.com/repository/docker/andytrieu/exercise1.15
+docker pull andytrieu/exercise1.15
+docker run -p 8080:8080 andytrieu/exercise1.15

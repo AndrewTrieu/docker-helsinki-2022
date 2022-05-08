@@ -1,0 +1,7 @@
+docker pull devopsdockeruh/coursepage 
+heroku login
+heroku container:login
+docker tag devopsdockeruh/coursepage registry.heroku.com/exercise-1-16-docker/web
+docker push registry.heroku.com/exercise-1-16-docker/web
+heroku container:release web --app exercise-1-16-docker 
+https://exercise-1-16-docker.herokuapp.com/
