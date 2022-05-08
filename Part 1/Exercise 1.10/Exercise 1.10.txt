@@ -1,2 +1,2 @@
 andrew_trieu@DESKTOP-RL9EAJM:~/docker_helsinki_2022/P1E10$ docker build -t . webserver
-andrew_trieu@DESKTOP-RL9EAJM:~/docker_helsinki_2022/P1E10$ docker run -p 3000:8080 webserver
+andrew_trieu@DESKTOP-RL9EAJM:~/docker_helsinki_2022/P1E10$ docker run -p 8080:8080 webserver
