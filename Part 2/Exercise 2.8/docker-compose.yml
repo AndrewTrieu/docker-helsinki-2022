@@ -1,0 +1,35 @@
+version: '2.5'
+
+services:
+  nginx:
+    image: nginx:1.19-alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+  postgres:
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - database:/var/lib/postgresql/data
+  redis:
+    image: redis
+  frontend:
+    image: frontend
+    ports:
+      - 5000:5000
+    container_name: frontend
+  backend:
+    image: backend
+    ports:
+      - 8080:8080
+    container_name: backend
+    environment:
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PASSWORD=postgres
+      
+volumes:
+  database:

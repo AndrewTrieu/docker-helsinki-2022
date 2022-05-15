@@ -1,0 +1,32 @@
+Modify Dockerfile and build new image for Backend:
+ENV REQUEST_ORIGIN=http://localhost:5000 -> ENV REQUEST_ORIGIN=http://localhost
+
+Modify nginx.conf to include other locations:
+
+events { worker_connections 1024; }
+
+http {
+    server {      
+        listen 80;
+        
+        location / {
+            proxy_pass http://frontend:5000/;
+        }
+
+        location /api/ {
+            proxy_pass http://backend:8080/;
+        }
+
+        location /messages {
+            proxy_pass http://backend:8080/messages;
+        }
+
+        location /ping {
+            proxy_pass http://backend:8080/ping;
+        }
+
+        location /slow {
+            proxy_pass http://backend:8080/slow;
+        }
+    }
+}

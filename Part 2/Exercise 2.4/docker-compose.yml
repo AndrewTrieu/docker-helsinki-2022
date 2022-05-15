@@ -1,0 +1,18 @@
+version: '2.5'
+
+services:
+  redis:
+    image: redis
+  frontend:
+    image: frontend
+    ports:
+      - 5000:5000
+
+  backend:
+    image: backend
+    ports:
+      - 8080:8080
+    container_name: backend
+    environment:
+      - REDIS_HOST=redis
+
