@@ -1,0 +1,3 @@
+touch text.log
+touch docker-compose.yml
+docker-compose up

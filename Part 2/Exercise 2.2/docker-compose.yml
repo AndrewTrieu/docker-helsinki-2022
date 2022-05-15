@@ -1,0 +1,10 @@
+version: '2.5'
+
+services:
+  simple-web-service:
+    image: devopsdockeruh/simple-web-service
+    ports:
+      - 8080:8080
+    command: server
+    volumes:
+      - ./text.log:/usr/src/app/text.log
